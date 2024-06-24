@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="uk"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	<!--  <link rel="profile" href="http://gmpg.org/xfn/11"> -->
+	<title>Сервер Empty – Огляд</title>
+	<meta name="robots" content="max-image-preview:large">
+	<link rel="dns-prefetch" href="https://fnanex.github.com/MinecraftEmptySite/">  <!-- LINK TO MAIN PAGE OF SITE -->
+	<!-- <link rel="dns-prefetch" href="https://s.w.org/"> -->
+	<script type="text/javascript">
+		window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/minecrafter.in.ua\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.8.4"}};
+		!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([10084,65039,8205,55357,56613],[10084,65039,8203,55357,56613])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+	</script><script src="./misc/wp-emoji-release.min.js.download" type="text/javascript" defer=""></script>
+	<style type="text/css">
+		img.wp-smiley,
+		img.emoji {
+			display: inline !important;
+			border: none !important;
+			box-shadow: none !important;
+			height: 1em !important;
+			width: 1em !important;
+			margin: 0 .07em !important;
+			vertical-align: -0.1em !important;
+			background: none !important;
+			padding: 0 !important;
+		}
+	</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="./css/style.min.css" type="text/css" media="all">
+	<link rel="stylesheet" id="neve-style-css" href="./css/style-main-new.min.css" type="text/css" media="all">
+	<style id="neve-style-inline-css" type="text/css">
+		.nv-meta-list li.meta:not(:last-child):after { content:"/" }.nv-meta-list .no-mobile{
+																		display:none;
+																	}.nv-meta-list li.last::after{
+																		 content: ""!important;
+																	 }@media (min-width: 769px) {
+			.nv-meta-list .no-mobile {
+				display: inline-block;
+			}
+			.nv-meta-list li.last:not(:last-child)::after {
+				content: "/" !important;
+			}
+		}
+		:root{ --container: 748px;--postwidth:100%; --primarybtnbg: var(--nv-primary-accent); --secondarybtnbg: rgba(0, 0, 0, 0); --primarybtnhoverbg: var(--nv-secondary-accent); --secondarybtnhoverbg: var(--nv-dark-bg); --primarybtncolor: #010101; --secondarybtncolor: var(--nv-dark-bg); --primarybtnhovercolor: #ffffff; --secondarybtnhovercolor: var(--nv-text-dark-bg);--primarybtnborderradius:0;--secondarybtnborderradius:0;--secondarybtnborderwidth:2px;--btnpadding:12px 24px;--primarybtnpadding:12px 24px;--secondarybtnpadding:10px 22px; --btnfs: 14px; --btnlineheight: 1.6em; --bodyfontfamily: Arial,Helvetica,sans-serif; --bodyfontsize: 16px; --bodylineheight: 1.7em; --bodyletterspacing: 0px; --bodyfontweight: 400; --bodytexttransform: none; --h1fontsize: 36px; --h1fontweight: 600; --h1lineheight: 1.2em; --h1letterspacing: 0px; --h1texttransform: none; --h2fontsize: 28px; --h2fontweight: 600; --h2lineheight: 1.3em; --h2letterspacing: 0px; --h2texttransform: none; --h3fontsize: 24px; --h3fontweight: 600; --h3lineheight: 1.3em; --h3letterspacing: 0px; --h3texttransform: none; --h4fontsize: 20px; --h4fontweight: 600; --h4lineheight: 1.6em; --h4letterspacing: 0px; --h4texttransform: none; --h5fontsize: 16px; --h5fontweight: 600; --h5lineheight: 1.3em; --h5letterspacing: 0px; --h5texttransform: none; --h6fontsize: 14px; --h6fontweight: 600; --h6lineheight: 1.3em; --h6letterspacing: 0px; --h6texttransform: none;--formfieldborderwidth:2px;--formfieldborderradius:0; --formfieldbgcolor: var(--nv-site-bg); --formfieldbordercolor: var(--nv-light-bg); --formfieldcolor: var(--nv-text-color);--formfieldpadding:10px 12px 10px 12px;; } .has-neve-button-color-color{ color: var(--nv-primary-accent)!important; } .has-neve-button-color-background-color{ background-color: var(--nv-primary-accent)!important; } .single-post-container .alignfull > [class*="__inner-container"], .single-post-container .alignwide > [class*="__inner-container"]{ max-width:718px } .nv-meta-list{ --avatarsize: 20px; } .single .nv-meta-list{ --avatarsize: 20px; } .blog .blog-entry-title, .archive .blog-entry-title{ --fontsize: 28px; } .single h1.entry-title{ --fontsize: 28px; } .nv-post-cover{ --height: 250px;--padding:40px 15px;--justify: flex-start; --textalign: left; --valign: center; } .nv-post-cover .nv-title-meta-wrap, .nv-page-title-wrap, .entry-header{ --color: var(--nv-text-dark-bg); --textalign: left; } .nv-is-boxed.nv-title-meta-wrap{ --padding:40px 15px; --bgcolor: var(--nv-dark-bg); } .nv-overlay{ --bgcolor: var(--nv-dark-bg); --opacity: 50; --blendmode: normal; } .nv-is-boxed.nv-comments-wrap{ --padding:20px; } .nv-is-boxed.comment-respond{ --padding:20px; } .global-styled{ --bgcolor: var(--nv-site-bg); } .header-top{ --rowbcolor: var(--nv-light-bg); --color: var(--nv-text-color); --bgcolor: #f0f0f0; } .header-main{ --rowbcolor: var(--nv-light-bg); --color: var(--nv-text-color); --bgcolor: var(--nv-site-bg); } .header-bottom{ --rowbcolor: var(--nv-light-bg); --color: var(--nv-text-color); --bgcolor: #ffffff; } .header-menu-sidebar-bg{ --justify: flex-start; --textalign: left;--flexg: 1;--wrapdropdownwidth: auto; --color: var(--nv-text-color); --bgcolor: var(--nv-site-bg); } .header-menu-sidebar{ width: 360px; } .builder-item--logo{ --maxwidth: 32px;--padding:10px 0;--margin:0; --textalign: left;--justify: flex-start; } .builder-item--nav-icon,.header-menu-sidebar .close-sidebar-panel .navbar-toggle{ --borderradius:0;--borderwidth:1px; } .builder-item--nav-icon{ --label-margin:0 5px 0 0;;--padding:10px 15px;--margin:0; } .builder-item--primary-menu{ --color: var(--nv-text-color); --hovercolor: var(--nv-secondary-accent); --activecolor: var(--nv-text-color); --spacing: 20px; --height: 25px;--padding:0;--margin:0; --fontsize: 1em; --lineheight: 1.6; --letterspacing: 0px; --fontweight: 600; --texttransform: uppercase; --iconsize: 1em; } .hfg-is-group.has-primary-menu .inherit-ff{ --inheritedfw: 600; } .builder-item--header_search{ --height: 40px;--formfieldborderwidth:2px;--formfieldborderradius:2px;--padding:0;--margin:0; } .builder-item--header_search_responsive{ --iconsize: 15px; --formfieldfontsize: 14px;--formfieldborderwidth:2px;--formfieldborderradius:2px; --height: 40px;--padding:0 10px;--margin:0; } .footer-top-inner .row{ grid-template-columns:1fr 1fr 2fr; --valign: flex-start; } .footer-top{ --rowbcolor: var(--nv-light-bg); --color: var(--nv-text-color); --bgcolor: var(--nv-dark-bg); } .footer-main-inner .row{ grid-template-columns:1fr 2fr; --valign: flex-start; } .footer-main{ --rowbcolor: var(--nv-light-bg); --color: var(--nv-text-color); --bgcolor: var(--nv-site-bg); } .footer-bottom-inner .row{ grid-template-columns:1fr 2fr; --valign: flex-start; } .footer-bottom{ --rowbcolor: var(--nv-light-bg); --color: var(--nv-text-dark-bg); --bgcolor: var(--nv-dark-bg); } .builder-item--footer-one-widgets{ --padding:0;--margin:0; --textalign: left;--justify: flex-start; } .builder-item--footer-two-widgets{ --padding:0;--margin:0; --textalign: left;--justify: flex-start; } .builder-item--footer-three-widgets{ --padding:0;--margin:0; --textalign: left;--justify: flex-start; } @media(min-width: 576px){ :root{ --container: 992px;--postwidth:100%;--btnpadding:12px 24px;--primarybtnpadding:12px 24px;--secondarybtnpadding:10px 22px; --btnfs: 14px; --btnlineheight: 1.6em; --bodyfontsize: 16px; --bodylineheight: 1.7em; --bodyletterspacing: 0px; --h1fontsize: 38px; --h1lineheight: 1.3em; --h1letterspacing: 0px; --h2fontsize: 30px; --h2lineheight: 1.3em; --h2letterspacing: 0px; --h3fontsize: 26px; --h3lineheight: 1.3em; --h3letterspacing: 0px; --h4fontsize: 22px; --h4lineheight: 1.5em; --h4letterspacing: 0px; --h5fontsize: 18px; --h5lineheight: 1.3em; --h5letterspacing: 0px; --h6fontsize: 14px; --h6lineheight: 1.3em; --h6letterspacing: 0px; } .single-post-container .alignfull > [class*="__inner-container"], .single-post-container .alignwide > [class*="__inner-container"]{ max-width:962px } .nv-meta-list{ --avatarsize: 20px; } .single .nv-meta-list{ --avatarsize: 20px; } .blog .blog-entry-title, .archive .blog-entry-title{ --fontsize: 32px; } .single h1.entry-title{ --fontsize: 40px; } .nv-post-cover{ --height: 30vh;--padding:60px 30px;--justify: flex-start; --textalign: left; --valign: center; } .nv-post-cover .nv-title-meta-wrap, .nv-page-title-wrap, .entry-header{ --textalign: left; } .nv-is-boxed.nv-title-meta-wrap{ --padding:60px 30px; } .nv-is-boxed.nv-comments-wrap{ --padding:30px; } .nv-is-boxed.comment-respond{ --padding:30px; } .header-menu-sidebar-bg{ --justify: flex-start; --textalign: left;--flexg: 1;--wrapdropdownwidth: auto; } .header-menu-sidebar{ width: 360px; } .builder-item--logo{ --maxwidth: 32px;--padding:10px 0;--margin:0; --textalign: left;--justify: flex-start; } .builder-item--nav-icon{ --label-margin:0 5px 0 0;;--padding:10px 15px;--margin:0; } .builder-item--primary-menu{ --spacing: 20px; --height: 25px;--padding:0;--margin:0; --fontsize: 1em; --lineheight: 1.6; --letterspacing: 0px; --iconsize: 1em; } .builder-item--header_search{ --height: 40px;--formfieldborderwidth:2px;--formfieldborderradius:2px;--padding:0;--margin:0; } .builder-item--header_search_responsive{ --formfieldfontsize: 14px;--formfieldborderwidth:2px;--formfieldborderradius:2px; --height: 40px;--padding:0 10px;--margin:0; } .builder-item--footer-one-widgets{ --padding:0;--margin:0; --textalign: left;--justify: flex-start; } .builder-item--footer-two-widgets{ --padding:0;--margin:0; --textalign: left;--justify: flex-start; } .builder-item--footer-three-widgets{ --padding:0;--margin:0; --textalign: left;--justify: flex-start; } }@media(min-width: 960px){ :root{ --container: 1170px;--postwidth:100%;--btnpadding:12px 24px;--primarybtnpadding:12px 24px;--secondarybtnpadding:10px 22px; --btnfs: 16px; --btnlineheight: 1.6em; --bodyfontsize: 17px; --bodylineheight: 1.2em; --bodyletterspacing: 0px; --h1fontsize: 40px; --h1lineheight: 1em; --h1letterspacing: 0px; --h2fontsize: 32px; --h2lineheight: 1em; --h2letterspacing: 0px; --h3fontsize: 28px; --h3lineheight: 1.2em; --h3letterspacing: 0px; --h4fontsize: 24px; --h4lineheight: 1.3em; --h4letterspacing: 0px; --h5fontsize: 20px; --h5lineheight: 1.3em; --h5letterspacing: 0px; --h6fontsize: 16px; --h6lineheight: 1.3em; --h6letterspacing: 0px; } body:not(.single):not(.archive):not(.blog):not(.search):not(.error404) .neve-main > .container .col, body.post-type-archive-course .neve-main > .container .col, body.post-type-archive-llms_membership .neve-main > .container .col{ max-width: 70%; } body:not(.single):not(.archive):not(.blog):not(.search):not(.error404) .nv-sidebar-wrap, body.post-type-archive-course .nv-sidebar-wrap, body.post-type-archive-llms_membership .nv-sidebar-wrap{ max-width: 30%; } .neve-main > .archive-container .nv-index-posts.col{ max-width: 70%; } .neve-main > .archive-container .nv-sidebar-wrap{ max-width: 30%; } .neve-main > .single-post-container .nv-single-post-wrap.col{ max-width: 70%; } .single-post-container .alignfull > [class*="__inner-container"], .single-post-container .alignwide > [class*="__inner-container"]{ max-width:789px } .container-fluid.single-post-container .alignfull > [class*="__inner-container"], .container-fluid.single-post-container .alignwide > [class*="__inner-container"]{ max-width:calc(70% + 15px) } .neve-main > .single-post-container .nv-sidebar-wrap{ max-width: 30%; } .nv-meta-list{ --avatarsize: 20px; } .single .nv-meta-list{ --avatarsize: 20px; } .blog .blog-entry-title, .archive .blog-entry-title{ --fontsize: 32px; } .single h1.entry-title{ --fontsize: 65px; } .nv-post-cover{ --height: 50vh;--padding:60px 40px 60px 40px;;--justify: flex-start; --textalign: left; --valign: flex-end; } .nv-post-cover .nv-title-meta-wrap, .nv-page-title-wrap, .entry-header{ --textalign: left; } .nv-is-boxed.nv-title-meta-wrap{ --padding:60px 40px 60px 40px;; } .nv-is-boxed.nv-comments-wrap{ --padding:40px; } .nv-is-boxed.comment-respond{ --padding:40px; } .header-menu-sidebar-bg{ --justify: flex-start; --textalign: left;--flexg: 1;--wrapdropdownwidth: auto; } .header-menu-sidebar{ width: 360px; } .builder-item--logo{ --maxwidth: 64px;--padding:10px 0;--margin:0; --textalign: left;--justify: flex-start; } .builder-item--nav-icon{ --label-margin:0 5px 0 0;;--padding:10px 15px;--margin:0; } .builder-item--primary-menu{ --spacing: 20px; --height: 25px;--padding:0;--margin:0; --fontsize: 0.8em; --lineheight: 1.6; --letterspacing: 0px; --iconsize: 0.8em; } .builder-item--header_search{ --height: 40px;--formfieldborderwidth:2px;--formfieldborderradius:2px;--padding:0;--margin:0; } .builder-item--header_search_responsive{ --formfieldfontsize: 14px;--formfieldborderwidth:2px;--formfieldborderradius:2px; --height: 40px;--padding:0 10px;--margin:0; } .builder-item--footer-one-widgets{ --padding:0;--margin:0; --textalign: left;--justify: flex-start; } .builder-item--footer-two-widgets{ --padding:0;--margin:0; --textalign: left;--justify: flex-start; } .builder-item--footer-three-widgets{ --padding:0;--margin:0; --textalign: left;--justify: flex-start; } }:root{--nv-primary-accent:#ff0000;--nv-secondary-accent:#aa1d1d;--nv-site-bg:#121212;--nv-light-bg:#2b2b2b;--nv-dark-bg:#1a1a1a;--nv-text-color:#ffffff;--nv-text-dark-bg:#ffffff;--nv-c-1:#77b978;--nv-c-2:#f37262;--nv-fallback-ff:Arial, Helvetica, sans-serif;}
+	</style>
+	<link rel="https://api.w.org/" href="https://minecrafter.in.ua/wp-json/"><link rel="alternate" type="application/json" href="https://minecrafter.in.ua/wp-json/wp/v2/posts/386"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://minecrafter.in.ua/xmlrpc.php?rsd">
+	<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://minecrafter.in.ua/wp-includes/wlwmanifest.xml">
+	<meta name="generator" content="WordPress 5.8.4">
+	<link rel="canonical" href="https://minecrafter.in.ua/vanillaplus/">
+	<link rel="shortlink" href="https://minecrafter.in.ua/?p=386">
+	<link rel="alternate" type="application/json+oembed" href="https://minecrafter.in.ua/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fminecrafter.in.ua%2Fvanillaplus%2F">
+	<link rel="alternate" type="text/xml+oembed" href="https://minecrafter.in.ua/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fminecrafter.in.ua%2Fvanillaplus%2F&amp;format=xml">
+	<style type="text/css" id="wp-custom-css">
+		body > div.wrapper {
+			background: url('/img/b777.jpg') fixed;
+		}
+		.sp-tab-content{
+			color: white !important;
+		}
+		label.sp-tab__active .sp-tab__tab_title {
+			color: black !important;
+		}
+		.sp-tab__tab_title{
+			color: white !important;
+			font-size: 40px !important;
+		}
+		.sp-tab__tab_title:hover{
+			color: white !important;
+			font-size: 40px !important;
+		}
+		body > div.wrapper > main > .container {
+			background-color: #000000c9;
+		}
+		.nv-non-grid-article .non-grid-content>.blog-entry-title {margin-bottom: 0px !important;
+		}
+		.nv-non-grid-article .non-grid-content>* {
+			margin-bottom: 10px !important;
+		}
+		.nv-index-posts {
+			margin-top: 10px!important;
+		}
+		td {
+			padding: 3px 5px !important;
+			border-width:1px !important;
+			line-height:1 !important;
+		}
+		tr {border:0 !important}
+		table {
+			border-collapse: collapse;
+		}
+		body, nav.header-main {background-color: #000000;}
+		.wp-block-cover-image img.wp-block-cover__image-background, .wp-block-cover-image video.wp-block-cover__video-background, .wp-block-cover img.wp-block-cover__image-background, .wp-block-cover video.wp-block-cover__video-background {
+			height:auto!important;
+		}
+		h1, h2, h3, h4, h5, h6 {margin-bottom:10px!important}
+		.nav-ul .sub-menu {
+			background-color: #4e4e4e;
+			right:unset;
+		}
+		.nav-ul li {
+			margin:0;
+		}
+		.nav-ul li:hover {
+			background-color: darkred;
+			text-decoration:none!important;
+		}
+		.nav-ul .sub-menu li>a  {
+			padding: 8px 0;
+		}
+		.nav-ul li>a {
+			margin: 5px 10px;
+		}
+		.nav-ul li>a:hover {
+			color: white;
+		}
+		.style-border-bottom a::after, .style-border-top a::after, .style-full-height a::after {
+			height: 0!important;
+		}
+		.posts-wrapper {
+			margin-top: 40px;
+		}
+		blockquote.wp-block-quote p {padding:10px 0}
+		blockquote.wp-block-quote {background-color:#003266;
+			border-color: #fff700;
+			border-style: solid;
+			border-width: 0 0 0 5px;
+		}
+		footer * {
+			background-color: unset !important;
+		}
+		.nv-non-grid-article {
+			margin-bottom: 30px;
+		}
+		aside#secondary {
+			background-color: #1c1c1c!important;
+			padding:20px;
+		}
+		aside#secondary ul li {
+			list-style: disc !important;
+			margin-left: 10px;
+			color: red;
+		}
+		@media screen and (max-width: 600px) {
+			#table-donate-premium td {
+				display: flex;
+				flex-direction: column;
+			}
+			#table-donate-premium td p span {
+				display: none;
+			}
+			#table-donate-premium tr {
+				background-color: #1f1f1f;
+				margin: 10px 0;
+				display: block;
+				border: 1px solid red;
+			}
+			#table-donate-premium tr td:first-child {
+				font-weight: bold;
+				color: red;
+			}
+			#table-donate-premium tr td:nth-child(2):before { content: "Простий Гравець";
+				color: yellow;
+			}
+			#table-donate-premium tr td:nth-child(3):before { content: "VILLAGER";
+				color: #339966;
+			}
+			#table-donate-premium tr td:nth-child(4):before { content: "PILLAGER";
+				color: #999999;
+			}
+			#table-donate-premium tr td:nth-child(5):before { content: "ENDERMAN";
+				color: #800080;
+			}
+			#table-donate-premium tr td:nth-child(6):before { content: "WITHER";
+				color: #99ccff;
+			}
+			#table-donate-premium tr td:nth-child(7):before { content: "WARDEN";
+				color: #33cccc;
+			}
+			#table-donate-premium tr td:nth-child(8):before { content: "DRAGON";
+				color: #ff00ff;
+			}
+			#table-donate-premium tr td:nth-child(9):before { content: "HEROBRINE";
+				color: #ff0000;
+			}
+
+		}		</style>
+
+</head>
+
+<body class="post-template-default single single-post postid-386 single-format-standard  nv-blog-default nv-sidebar-right menu_sidebar_slide_left" id="neve_body">
+<div class="wrapper">
+
+	<header class="header">
+		<a class="neve-skip-link show-on-focus" href="https://minecrafter.in.ua/vanillaplus/#content">
+			Перейти до вмісту		</a>
+		<div id="header-grid" class="hfg_header site-header">
+
+			<nav class="header--row header-main hide-on-mobile hide-on-tablet layout-contained nv-navbar header--row" data-row-id="main" data-show-on="desktop">
+
+				<div class="header--row-inner header-main-inner">
+					<div class="container">
+						<div class="row row--wrapper" data-section="hfg_header_layout_main">
+							<div class="hfg-slot left"><div class="builder-item desktop-left"><div class="item--inner builder-item--logo" data-section="title_tagline" data-item-id="logo">
+
+								<div class="site-logo">
+									<a class="brand" href="./index.html" title="Empty Server" aria-label="Empty Server"><div class="title-with-logo"><img width="665" height="668" src="./images/logo_ml_4.jpg" class="neve-site-logo skip-lazy" alt="" loading="lazy" data-variant="logo" sizes="(max-width: 665px) 100vw, 665px"><div class="nv-title-tagline-wrap"><p class="site-title">Empty Server</p></div></div></a></div>
+
+							</div>
+
+							</div><div class="builder-item has-nav"><div class="item--inner builder-item--primary-menu has_menu" data-section="header_menu_primary" data-item-id="primary-menu">
+								<div class="nv-nav-wrap">
+									<div role="navigation" class="style-border-bottom nav-menu-primary" aria-label="Головне меню">
+
+										<ul id="nv-primary-navigation-main" class="primary-menu-ul nav-ul"><li id="menu-item-395" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-395"><a href="./server.html"><span class="menu-item-title-wrap dd-title">/SERVER</span><div role="none" tabindex="-1" class="caret-wrap 1"><span class="caret"><svg aria-label="Dropdown" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span></div></a>
+											<ul class="sub-menu">
+												<li id="menu-item-398" class="menu-item menu-item-type-post_type menu-item-object-post current-menu-item menu-item-398"><a href="./server.html" aria-current="page">Сервер ВаніллаПлюс</a></li>
+											</ul>
+										</li>
+											<li id="menu-item-380" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-380"><a href=""><span class="menu-item-title-wrap dd-title">/DONATE</span><div role="none" tabindex="-1" class="caret-wrap 11"><span class="caret"><svg aria-label="Dropdown" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span></div></a>
+												<ul class="sub-menu">
+													<li id="menu-item-1159" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1159"><a href="">Донат на сервері</a></li>
+												</ul>
+											</li>
+											<li id="menu-item-728" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-728"><a href="./rules.html">Правила</a></li>
+											<li id="menu-item-598" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-598"><a href="./faq.html">FAQ</a></li>
+											<li id="menu-item-19" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19"><a target="_blank" rel="noopener" href="http://m14.joinserver.xyz:25604">Мапа ВаніллаПлюс</a></li>
+										</ul>	</div>
+								</div>
+
+							</div>
+
+							</div></div><div class="hfg-slot right"><div class="builder-item desktop-left"><div class="item--inner builder-item--header_search" data-section="header_search" data-item-id="header_search">
+							
+						</div>
+
+						</div></div>							</div>
+					</div>
+				</div>
+			</nav>
+
+
+			<nav class="header--row header-main hide-on-desktop layout-contained nv-navbar header--row" data-row-id="main" data-show-on="mobile">
+
+				<div class="header--row-inner header-main-inner">
+					<div class="container">
+						<div class="row row--wrapper" data-section="hfg_header_layout_main">
+							<div class="hfg-slot left"><div class="builder-item tablet-left mobile-left"><div class="item--inner builder-item--logo" data-section="title_tagline" data-item-id="logo">
+
+								<div class="site-logo">
+									<a class="brand" href="./index.html" title="Empty Server" aria-label="Empty Server"><div class="title-with-logo"><img width="665" height="668" src="./images/logo_ml_4.jpg" class="neve-site-logo skip-lazy" alt="" loading="lazy" data-variant="logo" sizes="(max-width: 665px) 100vw, 665px"><div class="nv-title-tagline-wrap"><p class="site-title">Empty Server</p></div></div></a></div>
+
+							</div>
+
+							</div><div class="builder-item tablet-left mobile-left"><div class="item--inner builder-item--nav-icon" data-section="header_menu_icon" data-item-id="nav-icon">
+								<div class="menu-mobile-toggle item-button navbar-toggle-wrapper">
+									<button type="button" class=" navbar-toggle" value="Меню навігації" aria-label="Меню навігації ">
+					<span class="bars">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</span>
+										<span class="screen-reader-text">Меню навігації</span>
+									</button>
+								</div> <!--.navbar-toggle-wrapper-->
+
+
+							</div>
+
+							</div></div><div class="hfg-slot right"><div class="builder-item tablet-left mobile-left"><div class="item--inner builder-item--header_search_responsive" data-section="header_search_responsive" data-item-id="header_search_responsive">
+
+						</div></div>							</div>
+					</div>
+				</div>
+			</nav>
+
+			<div id="header-menu-sidebar" class="header-menu-sidebar menu-sidebar-panel slide_left" data-row-id="sidebar">
+				<div id="header-menu-sidebar-bg" class="header-menu-sidebar-bg">
+					<div class="close-sidebar-panel navbar-toggle-wrapper">
+						<button type="button" class="hamburger is-active  navbar-toggle active" value="Меню навігації" aria-label="Меню навігації ">
+									<span class="bars">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</span>
+							<span class="screen-reader-text">
+				Меню навігації					</span>
+						</button>
+					</div>
+					<div id="header-menu-sidebar-inner" class="header-menu-sidebar-inner ">
+						<div class="builder-item has-nav"><div class="item--inner builder-item--primary-menu has_menu" data-section="header_menu_primary" data-item-id="primary-menu">
+							<div class="nv-nav-wrap">
+								<div role="navigation" class="style-border-bottom nav-menu-primary" aria-label="Головне меню">
+
+									<ul id="nv-primary-navigation-sidebar" class="primary-menu-ul nav-ul dropdowns-expanded"><li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-395"><div class="wrap"><a href="./server.html"><span class="menu-item-title-wrap dd-title">/SERVER</span></a><button tabindex="0" type="button" class="caret-wrap navbar-toggle 1"><span class="caret"><svg aria-label="Dropdown" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span></button></div>
+										<ul class="sub-menu">
+											<li class="menu-item menu-item-type-post_type menu-item-object-post current-menu-item menu-item-398"><a href="./server.html" aria-current="page">Сервер ВаніллаПлюс</a></li>
+										</ul>
+									</li>
+										<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-380"><div class="wrap"><a href=""><span class="menu-item-title-wrap dd-title">/DONATE</span></a><button tabindex="0" type="button" class="caret-wrap navbar-toggle 11"><span class="caret"><svg aria-label="Dropdown" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span></button></div>
+											<ul class="sub-menu">
+												<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-991"><a href="">Донат на сервері</a></li>
+											</ul>
+										</li>
+										<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-728"><a href="./rules.html">Правила</a></li>
+										<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-598"><a href="./faq.html">FAQ</a></li>
+										<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19"><a target="_blank" rel="noopener" href="http://m14.joinserver.xyz:25604/">Мапа ВаніллаПлюс</a></li>
+									</ul>	</div>
+							</div>
+
+						</div>
+
+						</div>					</div>
+				</div>
+			</div>
+			<div class="header-menu-sidebar-overlay hfg-ov"></div>
+		</div>
+	</header>
+
+	<style>.header-menu-sidebar .nav-ul li .wrap { position:relative; padding: 15px 0; display: flex; align-items: center; }.header-menu-sidebar .nav-ul li .wrap a { flex-grow: 1; }.header-menu-sidebar .nav-ul li .wrap a .dd-title { width: var(--wrapdropdownwidth); }.header-menu-sidebar .nav-ul li .wrap button { border: 0; z-index: 1; background: 0; }</style>
+
+
+	<main id="content" class="neve-main">
+
+		<div class="container single-post-container">
+			<div class="row">
+				<article id="post-386" class="nv-single-post-wrap col post-386 post type-post status-publish format-standard hentry category-vanillaplus category-servers">
+					<div class="entry-header"><div class="nv-title-meta-wrap"><h2 class="title entry-title">Сервер ВаніллаПлюс</h2><ul class="nv-meta-list"><li class="meta category "><a href="./index.html" rel="category tag"></a></li></ul></div></div><div class="nv-content-wrap entry-content">
+					
+					<p><strong><span class="has-inline-color has-nv-c-1-color">Донат</span></strong>: <a rel="noreferrer noopener" href="" target="_blank">(поки немає)</a></p>
+					
+					<p>Веб-мапа (інтерактивна онлайн мапа сервера): <a href="http://m14.joinserver.xyz:25604/" target="_blank" rel="noreferrer noopener">http://m14.joinserver.xyz:25604/</a></p>
+					
+					<h2>Що є на сервері, коротко:</h2>
+					
+					<ul id="server-features">
+						<li>Гра без лаунчера, вхід просто по айпі: <strong>EMPTY.GOMC.FUN</strong></li>
+						<li>Голосовий Чат на <a href="">Plasmo Voice</a></li>
+						<li>Підтримка звичайних та ліцензійних ігрових облікових записів.</li>
+						<li>лише ванільні види зачарувань.</li>
+						<li>тільки ванільні зілля.</li>
+						<li>тільки ванільні моби, рослини, предмети та механіки.</li>
+						<li>тільки ванільні блоки та рецепти крафта.</li>
+						<li>не можна купити ОП-ку (права оператора на Сервері) або Адмінку (права Адміна)</li>
+						<li>мульти-акаунт дозволено до 3-х облікових записів на один айпі.</li>
+						<li>можливість продавати у Магазині або іншим Гравцям (Аукціон <i>/ah</i>, Магазин <i>/shop</i>) безліч видів своїх ресурсів за ігрову валюту (можна заробити навіть продаючи зайвий камінь).</li>
+						<li>можливість купувати в інших Гравців або в Магазині (<i>/ah</i>, <i>/pay</i>) базові ресурси за ігрову валюту (якщо чогось дуже не вистачає і немає можливості це отримати швидко самому, наприклад – сльозу Гаста).</li>
+						<li>Могили! Речі гравця не валяються та не зникають після його смерті! Вони складаються в могилі і чекають господаря на місці його смерті протягом 3 годин!</li>
+						<li>PVP дозволено за взаємною згодою Гравців.</li>
+						<li>крім цього додані й інші (БЕЗКОШТОВНІ) незначні додаткові можливості,<br>які не ламають ванільну механіку гри, а просто спрощують виживання на Сервері.</li>
+					</ul></div>			</article>
+				<div class="nv-sidebar-wrap col-sm-12 nv-right blog-sidebar ">
+					<aside id="secondary" role="complementary">
+					</aside>
+				</div>
+			</div>
+		</div>
+
+	</main><!--/.neve-main-->
+
+	<footer class="site-footer" id="site-footer">
+		<div class="hfg_footer">
+			<div class="footer--row footer-top layout-contained" id="cb-row--footer-top" data-row-id="top" data-show-on="desktop">
+				<div class="footer--row-inner footer-top-inner footer-content-wrap">
+					<div class="container">
+						<div class="hfg-grid nv-footer-content hfg-grid-top row--wrapper row " data-section="hfg_footer_layout_top">
+							<div class="hfg-slot left"><div class="builder-item desktop-left tablet-left mobile-left"><div class="item--inner builder-item--footer-three-widgets" data-section="neve_sidebar-widgets-footer-three-widgets" data-item-id="footer-three-widgets">
+								<div class="widget-area">
+									<div id="block-16" class="widget widget_block"><a href="https://minecraft.org.ua/minecraft-servers/go/1" target="_blank"><img src="./server_files/x.php"></a></div>	</div>
+							</div>
+
+							</div></div><div class="hfg-slot c-left"><div class="builder-item desktop-left tablet-left mobile-left"><div class="item--inner builder-item--footer-one-widgets" data-section="neve_sidebar-widgets-footer-one-widgets" data-item-id="footer-one-widgets">
+							<div class="widget-area">
+								<div id="block-18" class="widget widget_block widget_text">
+									<p>АЙПІ / IP:&nbsp;<strong>EMPTY.GOMC.FUN</strong><br>PORT JAVA: 25719</p>
+								</div>	</div>
+						</div>
+
+						</div></div><div class="hfg-slot center"><div class="builder-item desktop-left tablet-left mobile-left"><div class="item--inner builder-item--footer-two-widgets" data-section="neve_sidebar-widgets-footer-two-widgets" data-item-id="footer-two-widgets">
+							<div class="widget-area">
+								<div id="block-10" class="widget widget_block widget_text">
+									<p>Minecraft&nbsp;<strong>1.20.4 Fabric</strong>&nbsp;ПК</p>
+								</div>	</div>
+						</div>
+
+						</div></div>							</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer--row footer-bottom layout-contained" id="cb-row--footer-bottom" data-row-id="bottom" data-show-on="desktop">
+				<div class="footer--row-inner footer-bottom-inner footer-content-wrap">
+					<div class="container">
+						<div class="hfg-grid nv-footer-content hfg-grid-bottom row--wrapper row " data-section="hfg_footer_layout_bottom">
+							<div class="hfg-slot left"><div class="builder-item"><div class="item--inner"><div class="component-wrap"><div></div></div></div></div></div><div class="hfg-slot c-left"></div>							</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+
+</div><!--/.wrapper-->
+<script type="text/javascript" id="neve-script-js-extra">
+	/* <![CDATA[ */
+	var NeveProperties = {"ajaxurl":"https:\/\/minecrafter.in.ua\/wp-admin\/admin-ajax.php","nonce":"c9004f37fd","isRTL":"","isCustomize":""};
+	/* ]]> */
+</script>
+<script type="text/javascript" src="./server_files/frontend.js.download" id="neve-script-js" async=""></script>
+<script type="text/javascript" id="neve-script-js-after">
+	var html = document.documentElement;
+	var theme = html.getAttribute('data-neve-theme') || 'light';
+	var variants = {"logo":{"light":{"src":"https:\/\/minecrafter.in.ua\/wp-content\/uploads\/2022\/08\/logo_ml_4.jpg","srcset":"https:\/\/minecrafter.in.ua\/wp-content\/uploads\/2022\/08\/logo_ml_4.jpg 665w, https:\/\/minecrafter.in.ua\/wp-content\/uploads\/2022\/08\/logo_ml_4-300x300.jpg 300w, https:\/\/minecrafter.in.ua\/wp-content\/uploads\/2022\/08\/logo_ml_4-150x150.jpg 150w","sizes":"(max-width: 665px) 100vw, 665px"},"dark":{"src":"https:\/\/minecrafter.in.ua\/wp-content\/uploads\/2022\/08\/logo_ml_4.jpg","srcset":"https:\/\/minecrafter.in.ua\/wp-content\/uploads\/2022\/08\/logo_ml_4.jpg 665w, https:\/\/minecrafter.in.ua\/wp-content\/uploads\/2022\/08\/logo_ml_4-300x300.jpg 300w, https:\/\/minecrafter.in.ua\/wp-content\/uploads\/2022\/08\/logo_ml_4-150x150.jpg 150w","sizes":"(max-width: 665px) 100vw, 665px"},"same":true}};
+
+	function setCurrentTheme( theme ) {
+		var pictures = document.getElementsByClassName( 'neve-site-logo' );
+		for(var i = 0; i<pictures.length; i++) {
+			var picture = pictures.item(i);
+			if( ! picture ) {
+				continue;
+			};
+			var fileExt = picture.src.slice((Math.max(0, picture.src.lastIndexOf(".")) || Infinity) + 1);
+			if ( fileExt === 'svg' ) {
+				picture.removeAttribute('width');
+				picture.removeAttribute('height');
+				picture.style = 'width: var(--maxwidth)';
+			}
+			var compId = picture.getAttribute('data-variant');
+			if ( compId && variants[compId] ) {
+				var isConditional = variants[compId]['same'];
+				if ( theme === 'light' || isConditional || variants[compId]['dark']['src'] === false ) {
+					picture.src = variants[compId]['light']['src'];
+					picture.srcset = variants[compId]['light']['srcset'] || '';
+					picture.sizes = variants[compId]['light']['sizes'];
+					continue;
+				};
+				picture.src = variants[compId]['dark']['src'];
+				picture.srcset = variants[compId]['dark']['srcset'] || '';
+				picture.sizes = variants[compId]['dark']['sizes'];
+			};
+		};
+	};
+
+	var observer = new MutationObserver(function(mutations) {
+		mutations.forEach(function(mutation) {
+			if (mutation.type == 'attributes') {
+				theme = html.getAttribute('data-neve-theme');
+				setCurrentTheme(theme);
+			};
+		});
+	});
+
+	observer.observe(html, {
+		attributes: true
+	});
+</script>
+<script type="text/javascript" src="./server_files/wp-embed.min.js.download" id="wp-embed-js"></script>
+<a style="display:none;" href="http://miniorange.com/cyber-security">Secured By miniOrange</a>
+
+
+
+
+</body></html>
